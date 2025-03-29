@@ -53,7 +53,7 @@ export function genai(request, system_prompt, hint_text, max_tokens, temperature
       stop: ["`", "``", "```"],
       max_completion_tokens: max_tokens,
       temperature: temperature,
-    }).then(response => {
+      }).then(response => {
         return response.choices[0].message.content.trim().replace("\n", "\r\n");
       })
       .catch(e => "ERROR QUERYING: " + e.message);

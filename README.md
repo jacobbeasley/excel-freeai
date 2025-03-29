@@ -1,6 +1,6 @@
 # Excel Free AI
 
-<img src="./assets/logo.jpeg" width=500 />
+<img src="./assets/logo.jpeg" width=300 />
 
 Excel Free AI is an open-source Excel add-in that enables users to query and interact with AI models locally, without relying on cloud-based APIs. Designed to work with models like **Llama 3.1 7B** running on **LM Studio** and other local AI runtimes, this add-in provides seamless integration of AI capabilities directly within Excel. It is also remarkeably simple to use and could easily be expanded in the future to do more. 
 
