@@ -1,0 +1,42 @@
+{
+    "allowCustomDataForDataTypeAny": true,
+    "functions": [
+        {
+            "description": "Add two numbers",
+            "id": "GENAI",
+            "name": "GENAI",
+            "parameters": [
+                {
+                    "description": "Your AI Prompt",
+                    "name": "request",
+                    "type": "string"
+                },
+                {
+                    "description": "system prompt it must follow. Defaults to You are a helpful, smart, kind, and efficient AI assistant. You always fulfill the user's requests to the best of your ability. You do not yap.",
+                    "name": "system_prompt",
+                    "optional": true,
+                    "type": "string"
+                },
+                {
+                    "description": "hint text to clue it in on what it is going to say in response. Defaults to Here is a response to your question and nothing more",
+                    "name": "hint_text",
+                    "optional": true,
+                    "type": "string"
+                },
+                {
+                    "description": "max tokens (defaults 500)",
+                    "name": "max_tokens",
+                    "optional": true,
+                    "type": "number"
+                },
+                {
+                    "description": "temperature (defaults 0.3)",
+                    "name": "temperature",
+                    "optional": true,
+                    "type": "number"
+                }
+            ],
+            "result": {}
+        }
+    ]
+}
