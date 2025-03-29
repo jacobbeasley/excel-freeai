@@ -49,7 +49,9 @@ This will compile the code, launch excel, as well as install the add-in in your 
 
 ## Distribution
 
-    npm run build
+    npm run start-build
+
+After it boots up, save file as Excel Add-In. 
 
 ## Configuration
 
