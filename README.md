@@ -22,7 +22,7 @@ Excel Free AI is an open-source Excel add-in that enables users to query and int
 - A locally installed AI model (e.g., Llama 3.1 7B - you can find it by searching for lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF)
 
 ### Steps
-1. Download the latest release from the [GitHub Releases](https://github.com/yourrepo/excel-free-ai/releases).
+1. Download the latest release from the [GitHub Releases](https://github.com/jacobbeasley/excel-freeai/releases).
 2. Open Excel and go to **File** → **Options** → **Add-ins**.
 3. Click **Manage: Excel Add-ins** and then **Go...**.
 4. Click **Browse...** and select the `ExcelFreeAI.xlam` file.
@@ -78,4 +78,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-For more details, visit the [GitHub repository](https://github.com/yourrepo/excel-free-ai).
+For more details, visit the [GitHub repository](https://github.com/jacobbeasley/excel-freeai).
