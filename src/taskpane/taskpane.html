@@ -1,0 +1,76 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        Office.onReady(() => {
+            aimodel = localStorage.getItem('freeai-aimodel') || 'lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF';
+            aibaseurl = localStorage.getItem('freeai-aibaseurl') || "http://localhost:1234/v1"
+            aiapikey = localStorage.getItem('freeai-aiapikey') || "lm-studio";
+            document.getElementById("apiurl").value = aibaseurl;
+            document.getElementById("apikey").value = aiapikey;
+            document.getElementById("modelname").value = aimodel;
+        });
+    </script>
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter" style="padding-top: 30px">
+        <img width="90" height="90" src="../../assets/logo.jpeg" alt="Free AI" title="Free AI" />
+        <h1 class="ms-font-su" style="margin-top: 5px; margin-bottom: 5px">Free AI</h1>
+    </header>
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Use Generative AI from Excel for free!</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <ul class="ms-List ms-welcome__features">
+            <li class="ms-ListItem">
+                <i class="ms-Icon ms-Icon--Ribbon ms-font-xl"></i>
+                <span class="ms-font-m">Connect to LM Studio or ChatGPT</span>
+            </li>
+            <li class="ms-ListItem">
+                <i class="ms-Icon ms-Icon--Unlock ms-font-xl"></i>
+                <span class="ms-font-m">Use like =FREEAI.GENAI("What is 5+4?")</span>
+            </li>
+        </ul>
+        <p class="ms-font-l">Modify the configuration below and <u>then click <b>Save</b></u>. </p>
+
+        <p class="ms-font-2">For LM Studio, make sure you have started the Local Server and turned on Cross-Origin Request Sharing (CORS).</p>
+
+        <p class="ms-font-2">Gen API URL</p>
+        <input type="text" id="apiurl" value="http://localhost:1234/v1" style="width: 100%" />
+        <p class="ms-font-3"><u style="cursor: pointer" onclick="document.getElementById('apiurl').value = this.innerHTML">http://localhost:1234/v1</u> for LM Studio or <u style="cursor: pointer" onclick="document.getElementById('apiurl').value = this.innerHTML">https://api.openai.com/v1</u> for ChatGPT</p>
+
+        <p class="ms-font-2">Gen API Key</p>
+        <input type="text" id="apikey" value="lm-studio" style="width: 100%" />
+        <p class="ms-font-3"><u style="cursor: pointer" onclick="document.getElementById('apikey').value = this.innerHTML">lm-studio</u> for LM Studio or your ChatGPT API Key</p>
+
+        <p class="ms-font-2">Model Name</p>
+        <input type="text" id="modelname" value="lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF" style="width: 100%" />
+        <p class="ms-font-3">Such as <u style="cursor: pointer" onclick="document.getElementById('modelname').value = this.innerHTML">lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF</u> in LM Studio or <u style="cursor: pointer" onclick="document.getElementById('modelname').value = this.innerHTML">gpt-3.5-turbo</u> for ChatGPT</p>
+
+        <div role="button" id="run" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
+            <span class="ms-Button-label">Save</span>
+        </div>
+        <p><label id="item-subject"></label></p>
+    </main>
+</body>
+
+</html>
