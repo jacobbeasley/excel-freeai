@@ -5,10 +5,10 @@
   <ProviderName>Contoso</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="FreeGenAI"/>
-  <Description DefaultValue="Write your own Excel functions in JavaScript."/>
+  <Description DefaultValue="Use Gen AI in Excel"/>
   <IconUrl DefaultValue="https://jacobbeasley.github.io/excel-freeai/dist/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://jacobbeasley.github.io/excel-freeai/dist/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <SupportUrl DefaultValue="https://github.com/jacobbeasley/excel-freeai"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
   </AppDomains>
