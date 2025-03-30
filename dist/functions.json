@@ -2,7 +2,94 @@
     "allowCustomDataForDataTypeAny": true,
     "functions": [
         {
-            "description": "Add two numbers",
+            "description": "Utility function for string templating",
+            "id": "FORMAT",
+            "name": "FORMAT",
+            "parameters": [
+                {
+                    "description": "A list of values. The first one is the template and subsequent ones are the parameters to plug into the template. Performs like sprintf in C.",
+                    "name": "strings",
+                    "repeating": true,
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Utility function for finding things in strings with regex",
+            "id": "REGEXSEARCH",
+            "name": "REGEXSEARCH",
+            "parameters": [
+                {
+                    "description": "to search",
+                    "name": "input",
+                    "type": "string"
+                },
+                {
+                    "description": "pattern to match.",
+                    "name": "regex",
+                    "type": "string"
+                },
+                {
+                    "description": "such as i for case insensitive.",
+                    "name": "options",
+                    "optional": true,
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Utility function for finding emails in strings",
+            "id": "EMAIL",
+            "name": "EMAIL",
+            "parameters": [
+                {
+                    "description": "to search",
+                    "name": "input",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Utility function for finding phones in strings",
+            "id": "PHONE",
+            "name": "PHONE",
+            "parameters": [
+                {
+                    "description": "to search",
+                    "name": "input",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Utility function for finding phones in strings",
+            "id": "USPHONE",
+            "name": "USPHONE",
+            "parameters": [
+                {
+                    "description": "to search",
+                    "name": "input",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Simple Gen AI Function",
             "id": "GENAI",
             "name": "GENAI",
             "parameters": [
@@ -34,6 +121,24 @@
                     "name": "temperature",
                     "optional": true,
                     "type": "number"
+                }
+            ],
+            "result": {}
+        },
+        {
+            "description": "Simple Gen AI Function for content extraction",
+            "id": "GENAIEXTRACT",
+            "name": "GENAIEXTRACT",
+            "parameters": [
+                {
+                    "description": "Content to extract from",
+                    "name": "content",
+                    "type": "string"
+                },
+                {
+                    "description": "What you want to extract",
+                    "name": "extract",
+                    "type": "string"
                 }
             ],
             "result": {}
