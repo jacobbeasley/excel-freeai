@@ -21,12 +21,24 @@ Excel Free AI is an open-source Excel add-in that enables users to query and int
 - If using LM Studio, be sure to start the Local Server and check the Cross-Origin Request Sharing (CORS) ON. 
 - A locally installed AI model (e.g., Llama 3.1 7B - you can find it by searching for lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF)
 
-### Steps
-1. Download the latest [ExcelFreeAI.xlam](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/ExcelFreeAI.xlam).
-2. Open Excel and go to **File** → **Options** → **Add-ins**. (On Mac, this is actually listed in **Tools** → **Excel Add-Ins**)
-3. Click **Manage: Excel Add-ins** and then **Go...**. (On Mac, click **Browse...**)
-4. Click **Browse...** and select the `ExcelFreeAI.xlam` file.
-5. Enable the add-in and restart Excel.
+## Installation
+
+### Mac
+
+Download and run [install-freeai.sh](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/install-freeai.sh) or run this command from a terminal and restart Excel: 
+
+    wget -P ~/Library/Containers/com.microsoft.Excel/Data/Documents/wef https://raw.githubusercontent.com/jacobbeasley/excel-freeai/master/freegenai-manifest-dist.xml
+
+### Windows
+
+Download and run [install-freeai.bat](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/install-freeai.bat) or run these commands from a CMD terminal and restart Excel: 
+
+    wget https://raw.githubusercontent.com/jacobbeasley/excel-freeai/master/freegenai-manifest-dist.xml
+    reg add "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\WEF\Developer" /v af26d049-d35a-4e62-bdbf-b0f076b05cbf /d "%cd%\freegenai-manifest-dist.xml" /t REG_SZ
+
+### Other Notes
+
+If you want to share this with members of your company and/or see [the official microsoft docs about publishing Excel add-ins](https://learn.microsoft.com/en-us/office/dev/add-ins/publish/publish).
 
 ## Usage
 
@@ -40,18 +52,14 @@ For more information, see [Microsoft's Documentation](https://learn.microsoft.co
 
 ## Local Development
 
+This will work in cmd or powershell so long as you have installed the latest LTS (long term support) version of node from [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
 Install a long-term-support version of NodeJS then...
 
     npm install
     npm run start
 
 This will compile the code, launch excel, as well as install the add-in in your Excel session. 
-
-## Distribution
-
-    npm run start-build
-
-After it boots up, save file as Excel Add-In. 
 
 ## Configuration
 
