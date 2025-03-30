@@ -23,8 +23,8 @@ Excel Free AI is an open-source Excel add-in that enables users to query and int
 
 ### Steps
 1. Download the latest [ExcelFreeAI.xlam](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/ExcelFreeAI.xlam).
-2. Open Excel and go to **File** → **Options** → **Add-ins**.
-3. Click **Manage: Excel Add-ins** and then **Go...**.
+2. Open Excel and go to **File** → **Options** → **Add-ins**. (On Mac, this is actually listed in **Tools** → **Excel Add-Ins**)
+3. Click **Manage: Excel Add-ins** and then **Go...**. (On Mac, click **Browse...**)
 4. Click **Browse...** and select the `ExcelFreeAI.xlam` file.
 5. Enable the add-in and restart Excel.
 

@@ -20,6 +20,7 @@
     "start-build": "office-addin-debugging start --no-debug --prod freegenai-manifest-dist.xml",
     "stop": "office-addin-debugging stop manifest.xml",
     "validate": "office-addin-manifest validate manifest.xml",
+    "validate-build": "office-addin-manifest validate freegenai-manifest-dist.xml",
     "watch": "webpack --mode development --watch"
   },
   "dependencies": {

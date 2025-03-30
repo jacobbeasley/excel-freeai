@@ -96,12 +96,12 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Functions.Namespace" DefaultValue="FREEAI"/>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with Free Local AI!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="Free AI"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Configure AI"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Task Pane' button to get started."/>
+        <bt:String id="GetStarted.Description" DefaultValue="Your Free AI add-in loaded successfully. Go to the HOME tab and click the 'Show Task Pane' button to get started."/>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Configuration Pane"/>
       </bt:LongStrings>
     </Resources>
