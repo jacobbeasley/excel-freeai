@@ -21,6 +21,8 @@ I have included 2 starter workbooks. One with macros and buttons to force recalc
 - [GenAIExamples.xlsx](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples.xlsm)
 - [GenAIExamples-With Macros.xlsm](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples-With%20Macros.xlsm)
 
+![lab](readme.png)
+
 ## Installation
 
 ### Prerequisites
@@ -99,6 +101,10 @@ This project is licensed under the [MIT License](LICENSE).
 For more details, visit the [GitHub repository](https://github.com/jacobbeasley/excel-freeai).
 
 ## Some screenshots of it in action
+
+Configuration of LLM
+
+![configuration](readme-5.png)
 
 Lab Example to Experiment
 
