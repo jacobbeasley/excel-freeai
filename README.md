@@ -21,7 +21,31 @@ I have included 2 starter workbooks. One with macros and buttons to force recalc
 - [GenAIExamples.xlsx](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples.xlsm)
 - [GenAIExamples-With Macros.xlsm](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples-With%20Macros.xlsm)
 
+## Some screenshots of it in action
+
+Lab Example to Experiment
+
 ![lab](readme.png)
+
+Example of Extracting Content
+
+![extract](readme-1.png)
+
+Example of Generating Content using Prompt Template
+
+![generate](readme-2.png)
+
+Example of Generating Table of Data
+
+![generate table](readme-3.png)
+
+Example of Classifying content into categories and subcategories
+
+![classify](readme-4.png)
+
+Configuration of LLM
+
+![configuration](readme-5.png)
 
 ## Installation
 
@@ -99,29 +123,3 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 For more details, visit the [GitHub repository](https://github.com/jacobbeasley/excel-freeai).
-
-## Some screenshots of it in action
-
-Configuration of LLM
-
-![configuration](readme-5.png)
-
-Lab Example to Experiment
-
-![lab](readme.png)
-
-Example of Extracting Content
-
-![extract](readme-1.png)
-
-Example of Generating Content using Prompt Template
-
-![generate](readme-2.png)
-
-Example of Generating Table of Data
-
-![generate table](readme-3.png)
-
-Example of Classifying content into categories and subcategories
-
-![classify](readme-4.png)
