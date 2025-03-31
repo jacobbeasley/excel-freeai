@@ -55,6 +55,9 @@ Configuration of LLM
 - If using LM Studio, be sure to start the Local Server and check the Cross-Origin Request Sharing (CORS) ON. 
 - A locally installed AI model (e.g., Llama 3.1 7B - you can find it by searching for lmstudio-community/Meta-Llama-3.1-8B-Instruct-GGUF)
 
+![download model](image-1.png)
+![run server](image.png)
+
 ## Installation
 
 ### Mac
