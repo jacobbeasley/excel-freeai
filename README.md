@@ -12,6 +12,14 @@ Excel Free AI is an open-source Excel add-in that enables users to query and int
 - **Customizable Settings** – Configure model parameters, temperature, and response length.
 - **Supports Multiple Models** – Works with AI models that run locally, such as those in LM Studio, but can also work with ChatGPT or other services.
 - **Open Source** – Modify and improve the add-in as needed. It is intentionally simple and could be easily extended. 
+- **Simple** – This is an amazingly simple plugin. 
+
+## Examples
+
+I have included 2 starter workbooks. One with macros and buttons to force recalculations on demand and one without. 
+
+- [GenAIExamples.xlsx](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples.xlsm)
+- [GenAIExamples-With Macros.xlsm](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples-With%20Macros.xlsm)
 
 ## Installation
 
@@ -83,9 +91,31 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 
 - [LM Studio](https://lmstudio.ai/) for making local AI model deployment accessible.
-- Open-source AI models like Llama 3.1 7B.
+- Open-source AI models like Llama 3.1 7B (Thanks Zuck!).
 - The project's creator, [Jacob Beasley](https://github.com/jacobbeasley/)
 
 ---
 
 For more details, visit the [GitHub repository](https://github.com/jacobbeasley/excel-freeai).
+
+## Some screenshots of it in action
+
+Lab Example to Experiment
+
+![lab](readme.png)
+
+Example of Extracting Content
+
+![extract](readme-1.png)
+
+Example of Generating Content using Prompt Template
+
+![generate](readme-2.png)
+
+Example of Generating Table of Data
+
+![generate table](readme-3.png)
+
+Example of Classifying content into categories and subcategories
+
+![classify](readme-4.png)
