@@ -18,7 +18,7 @@ Excel Free AI is an open-source Excel add-in that enables users to query and int
 
 I have included 2 starter workbooks. One with macros and buttons to force recalculations on demand and one without. 
 
-- [GenAIExamples.xlsx](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples.xlsm)
+- <a href="https://raw.githubusercontent.com/jacobbeasley/excel-freeai/refs/heads/master/GenAIExamples.xlsx" download="GenAIExamples.xlsx">GenAIExamples.xlsx</a>
 - [GenAIExamples-With Macros.xlsm](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/GenAIExamples-With%20Macros.xlsm)
 
 ## Some screenshots of it in action
