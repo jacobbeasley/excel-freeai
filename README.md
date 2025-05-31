@@ -62,9 +62,21 @@ Configuration of LLM
 
 ### Mac
 
-Download and run [install-freeai.sh](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/install-freeai.sh) or run this command from a terminal and restart Excel: 
+1. **Install Excel Plugin**: Download and run [install-freeai.sh](https://github.com/jacobbeasley/excel-freeai/raw/refs/heads/master/install-freeai.sh) or run this command from a terminal and restart Excel: 
 
     wget -P ~/Library/Containers/com.microsoft.Excel/Data/Documents/wef https://raw.githubusercontent.com/jacobbeasley/excel-freeai/master/freegenai-manifest-dist.xml
+
+2. **Install Packages for Secure Connection Between LM Studio and Microsoft Excel for Mac**: Excel for Mac cannot connect directly to LM Studio. So, we need to install a couple software utilities. This assumes you [have homebrew installed](https://brew.sh/). Open a command terminal and run these commands:
+
+    brew install mkcert
+    mkcert -install localhost 127.0.0.1 ::1
+    pip3 install simple-proxy
+
+3. **Tell Excel to Connect to Secure Proxy**: In the Free AI Excel Add-In Configuration, set the Gen AI URL to https://localhost:8443/v1 and click save. 
+
+4. **Run Secure Proxy Between Excel and LM Studio**: Whenever you want to use this plugin on Mac, you will have to open a command terminal and run this command. After it is running, you can safely shrink the terminal and let it run in the background. 
+
+    simple-proxy -r localhost -rp 1234 -kf localhost+2-key.pem -cf localhost+2.pem -lp 8443 -ss --workers 5
 
 ### Windows
 
